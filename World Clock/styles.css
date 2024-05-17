@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #001f3f;
+    margin: 0;
+    color: #ffd700;
+}
+
+.container {
+    text-align: center;
+    background-color: #001f3f;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    border: 2px solid #ffd700;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.map-container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+}
+
+#world-map {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffd700;
+}
+
+.city-marker {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+#los-angeles-marker {
+    top: 210px;
+    left: 222px;
+}
+
+#bangkok-marker {
+    top: 260px;
+    left: 685px;
+}
+
+#tokyo-marker {
+    top: 200px;
+    left: 770px;
+}
+
+#london-marker {
+    top: 172px;
+    left: 470px;
+}
+
+#new-york-marker {
+    top: 195px;
+    left: 335px;
+}
+
+.city-time {
+    position: absolute;
+    background-color: #001f3f;
+    color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    font-size: 0.7rem;
+}
+
+#los-angeles-time {
+    top: 225px;
+    left: 150px;
+}
+
+#bangkok-time {
+    top: 275px;
+    left: 600px;
+}
+
+#tokyo-time {
+    top: 220px;
+    left: 760px;
+}
+
+#london-time {
+    top: 145px;
+    left: 430px;
+}
+
+#new-york-time {
+    top: 170px;
+    left: 250px;
+}
