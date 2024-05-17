@@ -1,0 +1,29 @@
+name: Deploy multiple web apps to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        webapp:
+          - Arithmatic
+          - Clock
+          - Food
+          - World Clock
+
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy ${{ matrix.webapp }} to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./${{ matrix.webapp }}
+          publish_branch: ${{ matrix.webapp }}-gh-pages
